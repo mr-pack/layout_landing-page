@@ -1,0 +1,12 @@
+@mixin tablet {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin adaptive-content-padding-x {
+  padding-inline: 20px;
+  @include tablet {
+    padding-inline: 76px;
+  }
+}
